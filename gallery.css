@@ -23,7 +23,7 @@ body {
     width: 25px;
     padding: 15px;
     position: absolute;
-    left: 48%;
+    left: 49%;
 }
 
 #center_image:hover {
@@ -106,7 +106,7 @@ body {
 
 .gallery2 {
     position: absolute;
-    top: 215px;
+    top: 188px;
     right: -555px;
     background-color: black;
     width: 600px;
@@ -128,10 +128,37 @@ body {
     font-size: 30px;
 }
 
-.gallery2 > p:hover {
+.gallery2 > p#gallery2_p:hover {
     background-color: #ddd;
     cursor: pointer;
 }
+
+
+#description {
+    position: absolute;
+    top: 36%;
+    left: 45px;
+    color: white;
+    font-size: 17px;
+    text-shadow: 1px 1px 1px black;
+    height: 30%;
+    width: 545px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/*
+
+.gallery2 > p#description:hover {
+    color: white;
+    cursor: pointer;
+}
+
+I've decided to remove this style just because, once the cursor leaves a thumbnail, the text will disappear.
+
+*/
+
 
 .gallery3 {
     position: absolute;
@@ -214,4 +241,10 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /*background-color: var(--green); The "alt" gets interesting with this background, I won't keep it, though.*/
     display: none;
+}
+
+::selection {
+    background-color: var(--pink);
+    color: var(--orange);
+    text-shadow: 1px 1px 1px black;
 }

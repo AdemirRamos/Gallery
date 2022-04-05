@@ -70,5 +70,21 @@ function modal_window() {
     }
 }
 
+function description() {
+    var images = document.getElementsByClassName('image')
+    var description = document.getElementById('description')
+
+    for (let i = 0; i < images.length; i++) {
+        images[i].addEventListener('mouseenter', function() {
+            description.innerHTML = images[i].alt
+        })
+
+        images[i].addEventListener('mouseout', function() {
+            description.innerHTML = ''
+        })
+    }
+}
+
 window.addEventListener('load', modal_tabs)
 window.addEventListener('load', modal_window)
+window.addEventListener('load', description)
